@@ -18,7 +18,8 @@ public class Main {
         double media = (7 + 8 + 10)/3;
 
         if (inclusoLista) {
-            System.out.println("Nome do filme: " + filme + "\n" + "Ano de Lançamento" + anoLancamento + "\n" + sinopse + "\n" + "Média:" + media);
+            //System.out.println("Nome do filme: " + filme + "\n" + "Ano de Lançamento" + anoLancamento + "\n" + sinopse + "\n" + "Média:" + media);
+            System.out.println(String.format("Nome do filme: %s \n Ano de Lançamento: %d \n Sinopse: %s \n Média: %f", filme, anoLancamento, sinopse, media));
         } else {
             System.out.println("Nenhum filme disponível na lista");
         }

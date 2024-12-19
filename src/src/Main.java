@@ -9,6 +9,7 @@ public class Main {
         String filme = "Top GUN - Mavericks";
         int anoLancamento = 2022;
         boolean inclusoLista = true;
+        String tipoPlano = "Plus";
         String sinopse = """
                 Filme mediano
                 Longa Duração
@@ -17,11 +18,11 @@ public class Main {
         //Calculo da média
         double media = (7 + 8 + 10)/3;
 
-        if (inclusoLista) {
+        if (inclusoLista && tipoPlano.equals("Plus")) {
             //System.out.println("Nome do filme: " + filme + "\n" + "Ano de Lançamento" + anoLancamento + "\n" + sinopse + "\n" + "Média:" + media);
-            System.out.println(String.format("Nome do filme: %s \n Ano de Lançamento: %d \n Sinopse: %s \n Média: %f", filme, anoLancamento, sinopse, media));
+            System.out.println(String.format("Nome do filme: %s \nAno de Lançamento: %d \nSinopse: %s \nMédia: %f", filme, anoLancamento, sinopse, media));
         } else {
-            System.out.println("Nenhum filme disponível na lista");
+            System.out.println("Nenhum filme disponível na lista ou você não tem acesso ao conteúdo :(");
         }
 
     }

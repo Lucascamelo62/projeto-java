@@ -4,13 +4,18 @@ public class Main {
     public static void main(String[] args) {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Oi lucas!\n");
+        System.out.println("Esse é o Screen Match");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+        String filme = "Top GUN - Mavericks";
+        int anoLancamento = 2022;
+        boolean inclusoLista = false;
+
+        if (inclusoLista) {
+            System.out.println("Nome do filme: " + filme + "\n" + "Ano de Lançamento" + anoLancamento);
+        } else {
+            System.out.println("Nenhum filme disponível na lista");
         }
+
     }
 }
 

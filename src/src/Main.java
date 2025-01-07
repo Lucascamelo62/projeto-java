@@ -24,7 +24,6 @@ public class Main {
         } else {
             System.out.println("Nenhum filme disponível na lista ou você não tem acesso ao conteúdo :(");
         }
-
     }
 }
 

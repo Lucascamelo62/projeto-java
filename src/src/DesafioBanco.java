@@ -28,9 +28,6 @@ public class DesafioBanco {
             System.out.println(menu);
             System.out.printf("Digite a opção desejada: ");
             op = sc.nextInt();
-            if (op < 1 || op > 4) {
-                System.out.println("Opção inválida!");
-            }
             if (op == 1) {
                 System.out.println(String.format("Saldo Final: %.2f", saldo));
             } else if (op == 2) {
@@ -49,6 +46,8 @@ public class DesafioBanco {
                 } else {
                     saldo -= transferirValor;
                 }
+            } else if (op != 4) {
+                System.out.println("Opção invalida!");
             }
         }
 
